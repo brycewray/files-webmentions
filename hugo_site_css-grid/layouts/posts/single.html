@@ -1,0 +1,52 @@
+{{ define "main" }}
+
+  <div class="background-hero-div">
+    <div class="background-hero-title-block-fit">
+      <h1 class="background-hero-title-text">{{ .Title | markdownify}}</h1>
+      <h2 class="background-hero-subtitle-text" style="margin-top: 0;">
+        {{- if .Params.Subtitle }}
+        {{ .Params.Subtitle | markdownify }}
+        {{- else }}
+        &nbsp;
+        {{- end }}
+      </h2>
+      <p class="background-hero-description-text">{{ .Params.Description }}</p>
+      <p class="background-hero-p-text">
+        <span style="font-variant: small-caps">published:</span>&nbsp; <strong>{{ .PublishDate.Format "January 2, 2006" }}</strong><br />
+        <span class="pokey">
+        {{- if ne .PublishDate .Lastmod }}
+        <span style="font-variant: small-caps">last modified:</span>&nbsp; {{ .Lastmod.Format "January 2, 2006" }}
+        {{- else }}
+        &nbsp;
+        {{- end }}
+        </span>
+      </p>
+    </div>
+  </div>
+
+  <div class="container-narrower">
+    <article class="article">
+      {{ .Content }}
+    </article>
+  </div>
+
+  {{- partial "webmentions.html" . -}}  
+  
+  {{ if or .PrevPage .NextPage }}
+    <div class="bg-dark">
+      <h3 class="ctr wht"><a href="/posts/" style="border-bottom: 0;">Other posts</a></h3>
+			<p class="ctr">
+				{{ with .NextInSection }}
+					<strong>Next</strong>:
+					<a class="next" href="{{.Permalink}}"> {{.Title}}</a>
+					{{ end }}
+			</p>
+			<p class="ctr">
+				{{ with .PrevInSection }}
+					<strong>Previous</strong>:
+					<a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
+					{{ end }}
+			</p>
+    </div>
+  {{ end }}
+{{ end }}
