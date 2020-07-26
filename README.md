@@ -1,6 +1,6 @@
 # Files from my series on webmentions (April, 2020)
 
-After doing a series on adding [webmentions](https://indieweb.org/Webmention) to one’s [SSG](https://staticgen.com)-powered website (see links below), I subsequently made major changes in all the repositories to which the articles linked, essentially making a number of links useless. Because that’s not exactly a good way to help people learn about something, I created this repo as a way of archiving those files and, then, linked from the articles to these files appropriately.
+After doing a series on adding [webmentions](https://indieweb.org/Webmention) to one’s [SSG](https://staticgen.com)-powered website (see links below), I subsequently made major changes in all the repositories to which the articles linked, essentially making a number of links useless. Because that’s not exactly a good way to help people learn about something, I created this repo as a way of archiving those files and, then, updated the articles to link to the files’ locations here, instead of their original locations.
 
 # The five parts of the series
 
