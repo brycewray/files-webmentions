@@ -4,59 +4,8 @@
   "description": "",
   "version": "1.0.0",
   "author": "",
-  "dependencies": {
-    "babel-plugin-styled-components": "^1.10.7",
-    "cssnano": "^4.1.10",
-    "dotenv": "^8.2.0",
-    "gatsby": "^2.20.7",
-    "gatsby-background-image": "^0.10.2",
-    "gatsby-image": "^2.3.1",
-    "gatsby-plugin-feed": "^2.4.1",
-    "gatsby-plugin-html-attributes": "^1.0.5",
-    "gatsby-plugin-manifest": "^2.3.3",
-    "gatsby-plugin-netlify-cache": "^1.2.0",
-    "gatsby-plugin-offline": "^3.1.2",
-    "gatsby-plugin-postcss": "^2.2.1",
-    "gatsby-plugin-react-helmet": "^3.2.1",
-    "gatsby-plugin-sharp": "^2.5.3",
-    "gatsby-plugin-sitemap": "^2.3.1",
-    "gatsby-plugin-styled-components": "^3.2.1",
-    "gatsby-plugin-twitter": "^2.2.1",
-    "gatsby-plugin-webmention": "^0.2.0",
-    "gatsby-remark-copy-linked-files": "^2.2.1",
-    "gatsby-remark-embed-video": "^2.0.1",
-    "gatsby-remark-external-links": "0.0.4",
-    "gatsby-remark-images": "^3.2.1",
-    "gatsby-remark-numbered-footnotes": "^1.0.1",
-    "gatsby-remark-prismjs": "^3.4.1",
-    "gatsby-remark-responsive-iframe": "^2.3.1",
-    "gatsby-remark-smartypants": "^2.2.1",
-    "gatsby-source-filesystem": "^2.2.2",
-    "gatsby-transformer-remark": "^2.7.1",
-    "gatsby-transformer-sharp": "^2.4.2",
-    "intersection-observer": "^0.7.0",
-    "moment-timezone": "^0.5.28",
-    "postcss-css-variables": "^0.14.0",
-    "postcss-nesting": "^7.0.1",
-    "postcss-partial-import": "^4.1.0",
-    "postcss-preset-env": "^6.7.0",
-    "prismjs": "^1.19.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^5.2.1",
-    "styled-components": "^5.0.1",
-    "typeface-public-sans": "^1.1.4",
-    "typeface-roboto-mono": "0.0.75"
-  },
-  "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-plugin-flowtype": "^4.7.0",
-    "prettier": "^2.0.2"
-  },
-  "keywords": [
-    "gatsby"
-  ],
+  "dependencies": {},
+  "devDependencies": {},
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -66,12 +15,5 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/brycewray/gatsby_site_css-grid"
-  },
-  "bugs": {
-    "url": "https://github.com/brycewray/gatsby_site_css-grid/issues"
   }
 }
